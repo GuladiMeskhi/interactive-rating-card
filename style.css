@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;700&display=swap');
+:root {
+    --color-primary: #fb7413;
+    --color-white: #ffffff;
+    --color-medium-grey: #7c8798;
+    --color-dark-blue: #252d37;
+    --color-very-dark-blue: #121417;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+*{
+    font-family: 'Overpass', sans-serif;
+    margin:0px;
+    gap:20px;
+}
+
+body{
+    background-color:hsl(216, 12%, 8%);
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content: center;
+}
+
+.width {
+    width:80%;
+}
+
+.rating-card {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:360px;
+    height:420px;
+    background-color:hsl(213, 20%, 18%);
+    border-radius:5%;
+}
+
+.rating-txt{
+    color:hsl(216, 12%, 54%);
+    font-size:15px;
+}
+
+.rating-btns{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    padding-left:0;
+    width:80%;
+}
+
+.rating-btn{
+    width:40px;
+    height:40px;
+    background-color:hsl(216, 12%, 54%);
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0.5;
+    transition: 0.2s ease-out;
+}
+
+.rating-btn:hover{
+    background-color:var(--color-primary);
+    opacity:1;
+    color:white;
+}
+
+
+.rating-btns a {
+    color:white;
+    text-decoration: none;
+}
+
+.rating-header {
+  color:white;
+}
+
+.rating-submit {
+    border:none;
+    color:var(--color-primary);
+    height:40px;
+    margin-top:2vh;
+    font-weight:600;
+    border-radius:20px;
+    transition:0.2s ease-in-out;
+}
+
+.rating-submit:hover{
+    background-color:var(--color-primary);
+    color:white;
+}
+
+.star {
+    display:flex;
+}
+
+.star div {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-very-dark-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color:var(--color-medium-grey);
+    color:white;
+    opacity:1;
+}
+
+
+
+.thank-you {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:80%;
+}
+
+.thank-you-img {
+    width:150px;
+    height:110px;
+}
+
+.thank-you-rating {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
+    color:var(--color-primary);
+    background-color:var(--color-medium-grey);
+    border-radius:15px;
+    width: 180px;
+    height: 30px;
+}
+
+.thank-you-header{
+    color:white;
+}
+
+.thank-you-txt {
+    color:hsl(216, 12%, 54%);
+    font-size:15px;
+}
